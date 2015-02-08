@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         nameLabel.textColor = UIColor.blueColor()
         
         enterNameTextField.text = ""
+        enterNameTextField.resignFirstResponder()
         
         
         //enabling the label to be updated by a user entered message from the message field
