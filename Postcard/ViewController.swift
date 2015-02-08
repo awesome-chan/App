@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
+        //enabling the label to be updated by a user entered message from the message field
         messageLabel.hidden = false
         messageLabel.text = enterMessageTextField.text
         messageLabel.textColor = UIColor.redColor()
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder()
         
+        //updating the CTA text on click event
         mailButton.setTitle("Sent!", forState: UIControlState.Normal)
     }
 
